@@ -21,9 +21,15 @@ public final class Constants {
     public static final String USERNAME_INPUT = "//input[@id='username']";
     public static final String PASSWORD_INPUT = "//input[@id='password']";
     public static final String BASIC_SEARCH_INPUT = "//input[@type='text' and @placeholder='Search']";
+    public static final String BASIC_SEARCH_INPUT_TWO = "//input[@type='text' and @placeholder='Search Jira']";
+    public static final String ADVANCED_SEARCH_TEXTAREA = "advanced-search";
+    public static final String SUMMARY_INPUT = "//input[@id='summary']";
+    public static final String DESCRIPTION_TEXT_FIELD = "//*[@id='description']";
 
     // BUTTON Elements
-    public static final String ADVANCED_SEARCH_TEXTAREA = "advanced-search";
+    public static final String CREATE_ISSUE_BUTTON = "//button[@id='createGlobalItem\']";
+    public static final String CREATE_BUTTON = "//*[@id='create-issue-submit']";
+    public static final String SEARCH_NAVBAR_BUTTON = "//button[@id='quickSearchGlobalItem']";
 
     // HEADING Elements
     public static final String VARIABLE_BY_TEXT_HEADING = "//h1[text()='%s']";
@@ -38,6 +44,10 @@ public final class Constants {
 
     // STATIC Text
     public static final String NO_RECORDS_FOUND_TEXT = "No records found, try new search criteria.";
+    public static final String NO_MATCHING_ITEMS_TEXT = "We couldn't find anything matching your search\n" + "Try again with a different term.";
+    public static final String SUMMARY_TEXT = "This is a default summary.";
+    public static final String DESCRIPTION_TEXT = "This is a default description.";
+    public static final String SEARCH_MATCHING_ISSUES_URL = "https://ucsd-ext.atlassian.net/browse/ANP-";
 
     //DIV Elements
     public static final String VARIABLE_BY_TEXT_DIV = "//div[text()='%s']";
@@ -45,9 +55,15 @@ public final class Constants {
     public static final String BOARDS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Boards']";
     public static final String PROJECTS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Projects']";
 
-    public static final String ISSUES_AND_FILTERS_DIV = "//*[@id='navigation-app']/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[3]/a/div[2]/div";
-    public static final String DASHBOARD_DIV = "//*[@id=\"navigation-app\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[1]/a/div[2]/div";
-    public static final String PROJECTS_DIV = "//*[@id=\"jira-frontend\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+    public static final String ISSUES_AND_FILTERS_DIV = "//*[@id='helpPanelContainer']/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[5]/a/div[2]/div";
+    public static final String DASHBOARD_DIV = "//*[@id='helpPanelContainer']/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+    public static final String PROJECTS_DIV = "//*[@id='jira-frontend']/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+
+
+
+
+
+
 
     private Constants() {
     }
